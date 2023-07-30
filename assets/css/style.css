@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+.home .lists{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
