@@ -1,14 +1,72 @@
-.home{
-    display: flex;
-    flex-direction: row;
-    background-color: red;
+:root{
+    --primary-color: #007bff;
+    --secondary-color: #f3f3f3;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3,127,255,.3);
+    --white-color: #FFF;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --rubik: 'Rubik', sans-serif;
 }
-.home .lists{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
 }
-a{
-    text-decoration: none;
+.bg-image{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(../images/code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 155px 0;
+}
+.hero-section{
+    width: 60%;
+    color: #F1F1F1;
+}
+.hero-infos{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.features-section{
+    padding: 110px 0;
+    background-color: var(--secondary-color);
+}
+.features-small-item{
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: var(--rubik);
+    font-size: 2.2rem;
+    border-radius: 20px;
+    color: var(--font-dark-color);
+}
+.feature-card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 70px 25px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+
+}
+.feature-card-icon i{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
 }
